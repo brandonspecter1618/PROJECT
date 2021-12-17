@@ -1,0 +1,350 @@
+@media screen and (min-width: 0px) and (max-width: 1366px) and (min-height: 0px) and (max-height: 768px){
+    
+
+    /*****************************MENU AJUSTE COM MEDIA QUERY************************************************/
+        
+        /*Position of Second Menu*/
+        
+        .positionSecondMenu{
+        
+            position: relative;
+            bottom: 36px;
+            left: 622px;
+            border: 0px solid red;  /*Position of second menu describes in file html index.html*/
+            height: 0px; 
+            width: 500px; 
+        }
+        
+        .carrinhoDeCompras{
+            position: relative;
+            left: 660px;
+            bottom: 40px;        /*CSS carrinho de compras*/
+            height: 20px;
+            width: 23px;
+        }
+        /*Fundo Do Menu em Amarelo*/
+        
+        .divmenu{
+            position: relative;
+            bottom: 10px;
+            left: 0px;
+            margin: auto;    /*Cresce a div de maneira igual para ambos os lados*/
+            background-color: rgb(255,241,89);
+            height: 120px;
+            width: 1353px;
+            box-sizing: border-box;
+        }
+        
+        /*Botão de Clicar para Compras Internacionais*/
+        
+        .comprasInter{
+            position: relative;
+            bottom: 85px;
+            left: 140px;
+            height: 40px;
+            width:  350px;
+            box-sizing: border-box;
+        }
+        
+        
+        
+        
+        /*MENU DO SITE Categorias, Ofertas do dia.....*/
+        
+        nav.primary-navigation {
+            position: relative;     /*Controle sobre a posição do menu*/
+            bottom: 66px;
+            right: 113px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            width: 756px;          
+            height: 30px;
+           
+            
+                      
+        }
+        
+        /*SUBMENU DE TECNOLOGIA*/
+        
+        /*Fim das Posições*/
+        
+        
+        nav.primary-navigation ul li ul li ul {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            left: 176px;
+            top: -75px;       /*Aumenta o quadro depois que passa o mouse no menu*/
+            display: block;
+            background: rgb(255,255,255);    /*Cor de fundo depois que passa o mouse em cima*/
+            z-index:99;     /*Este comando faz com que um item sobreponha o outro. No caso o submenu sobrepondo o resto do site*/
+            border: 0px solid red;
+        }
+        
+        
+    /*****************************FIM MENU AJUSTE COM MEDIA QUERY************************************************/
+       
+        
+    /*****************************PAGAMENTO RÁPIDO COM MEDIA QUERY************************************************/
+        
+    
+    .divmoveall{
+        position: relative;
+        left: 60px;
+        bottom: 10px;
+        width:190px;
+        height: 100px;
+    }
+    
+    .divpagamento{
+    
+        position: relative;
+        left: 100px;
+        border: 1px solid #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;;
+        background-color:#fff;
+        height: 96px;
+        width: 1090px;
+        box-sizing: border-box;
+    }
+    
+    .varpmove1{
+        position: relative;  /*Move a DIV Com tudo dentro*/
+        left: 10px;
+        bottom: 10px;
+    }
+    
+    .varpmove2{
+        position: relative;  /*Move a DIV Com tudo dentro*/
+        left: 87px;
+        bottom: 121px;
+    }
+    
+    .varpmove3{
+        position: relative;  /*Move a DIV Com tudo dentro*/
+        left: 360px;
+        bottom: 231px;
+    }
+    
+    
+    .varpmove4{
+            position: relative;  /*Move a DIV Com tudo dentro*/
+            left: 1100px;
+            bottom: 675px;
+            width: 100px;
+    }
+    
+    
+    /*****************************FIM PAGAMENTO RÁPIDO COM MEDIA QUERY************************************************/
+    
+    /*****************************Texto BASEADA COM MEDIA QUERY************************************************/
+    
+    
+    
+    .varpbaseada{
+    
+        position: relative;
+        left: 120px;
+        top: 30px;
+        color: rgb(119, 119, 119);
+        font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+        font-size: 26px;
+        box-sizing: border-box;
+        width: 340px;
+    }
+    
+    .varLinkVer4{
+        position: relative;
+        left: 480px;
+        bottom: 14px;
+        font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+        font-size: 16px;
+        color: rgb(52,131,250);
+        text-decoration: none;
+        
+    }
+        
+        
+    .varprodutodivall{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: flex-start;
+         align-content: space-around;
+         width: 1200px;   
+         margin-left: 122px;
+         margin-top: 5px;
+    }
+        
+    /*****************************Texto FIM BASEADA COM MEDIA QUERY************************************************/
+        
+    /*****************************Texto RELACIONADO COM MEDIA QUERY************************************************/
+        
+        
+    .varmoverelacionado {
+        position: relative;
+        top: -10px;
+        right:30px;
+        box-sizing: border-box;
+        width: 200px;
+    }
+    
+    .varprodutodivallrelacionado{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-around;
+        width: 1200px;   
+        margin-left: 120px;
+        margin-top: 0px;
+    }
+        
+    /*****************************Texto FIM RELACIONADO COM MEDIA QUERY************************************************/
+        
+    /*****************************Texto OFERTA COM MEDIA QUERY************************************************/
+        
+    
+    .varmoveoferta {
+        position: relative;
+        bottom: 10px;
+        right:37px;
+        box-sizing: border-box;
+        width: 200px;
+    }
+        
+    .varprodutodivalloferta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-around;
+        width: 1200px;   
+        margin-left: 120px;
+        margin-top: 0px;
+    }
+    
+    /*****************************Fim Texto OFERTA COM MEDIA QUERY************************************************/
+
+    
+    
+    /**************************Benefícios Do Mercado Pontos*************************************/
+    
+    .varmovebeneficiosmercadoall{
+
+        margin-left: -32px;
+        width: 0px;
+    }
+    
+    
+    .varbeneficiosflex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-end;
+        width: 1170px;
+        margin-left: 213px;
+    }
+    
+    
+    /********Disney*********/
+
+    .vardisneyall{
+        margin-left: -120px;
+    }
+    
+    
+    /********HBOMAX*********/
+    .varhbomaxall{
+    
+        margin-left: -100px;  
+    }
+    
+    /********Paramount*********/
+
+    .varparamountall{
+
+        margin-left: -100px;
+}
+    
+    /**********************Fim Benefícios Do Mercado Pontos*************************************/
+
+    
+    /****************************Promoções a cada 1 hora****************************************/
+    
+    .varmoveconfiraall{
+
+        margin-top:300px;
+        margin-left: -80px;
+        width: 400px;
+}
+    
+    .varmovefinancie2{
+        position: relative;
+        left: 500px;
+        bottom: 552px;
+        width: 360px;
+        height: 0px;
+    }
+    
+    /****************************Fim Promoções a cada 1 hora****************************************/
+    
+    
+    /****************************Você também pode gostar*********************************************/
+    
+    .varmovegostarall{
+
+        margin-left: -82px;
+        width: 0px;
+    }
+    
+    /***********************Fim Você também pode gostar*********************************************/
+    
+    
+    /***************************Você também pode gostar*******************************************/
+    
+    
+    .varmovelojasall{
+        margin-left: -82px;
+        margin-top: -220px;
+        width: 0px;
+    }
+    
+    /************************Fim Você também pode gostar*******************************************/
+     
+    
+    /*************************Você também pode gostar***************************/
+    
+    .varmoveinteressarall{
+
+        margin-left: -82px;
+        border: 5px solid red;
+        width: 0px;
+    }
+    
+    /***********************Fim Você também pode gostar***************************/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}

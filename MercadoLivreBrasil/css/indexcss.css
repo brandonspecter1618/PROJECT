@@ -1,0 +1,2200 @@
+/*Fundo do Site Geral*/
+
+.varbody {
+    background-color: rgb(204, 204, 204);
+    margin: 0px;
+    padding: 0px;
+}
+
+/*********************************************************************************/
+
+/*                         MENU SITE                     */
+
+.positionMenu{
+
+    position: relative;
+    bottom: 20px;
+    right: 0px;
+}
+
+/*Position of Second Menu*/
+
+.positionSecondMenu{
+
+    position: relative;
+    bottom: 36px;
+    left: 660px;
+    border: 0px solid red;  /*Position of second menu describes in file html index.html*/
+    height: 0px; 
+    width: 500px; 
+}
+
+.carrinhoDeCompras{
+    position: relative;
+    left: 690px;
+    bottom: 40px;        /*CSS carrinho de compras*/
+    height: 20px;
+    width: 23px;
+}
+/*Fundo Do Menu em Amarelo*/
+
+.divmenu{
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+    margin: auto;    /*Cresce a div de maneira igual para ambos os lados*/
+    background-color: rgb(255,241,89);
+    height: 120px;
+    width: 1428px;
+    box-sizing: border-box;
+}
+
+/*Icone do Mercado Livre*/
+
+.iconmenu {
+    position: relative;
+    bottom: 88px;
+    left: 120px;
+    
+}
+
+/*Botão de Clicar para CEP*/
+
+.cep{
+    position: relative;
+    background-color: rgb(255,241,89);
+    border-width: 1px;
+    border-color: rgb(255,241,89);
+    border-style: solid;
+    height: 0px;
+    bottom: 40px;
+    right:  23px;
+    box-sizing: border-box;
+}
+
+/*Input para pesquisar*/
+
+.input{
+    position: relative;
+    bottom: 85px;
+    left: 54px;
+    height: 36px;
+    width: 551px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-sizing: border-box;
+    outline: 0;  /*remove as linhas que ficam circulares quando clica dentro de input*/
+}
+
+.input::placeholder {
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 15.5px;
+    color: rgb(170, 170, 170);
+}
+
+
+
+.inputsearch{
+
+    position: relative;
+    bottom: 86px;
+    right: 310px;
+    background-color: #fff;
+    border-width: 0px;
+    border-color: red;                      /*botão pesquisa ao lado do input*/
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.inputsearchphoto{
+
+    height: 34px;
+    width: 41px;
+ 
+}
+
+
+
+/*Botão de Clicar para Compras Internacionais*/
+
+.comprasInter{
+    position: relative;
+    bottom: 84px;
+    left: 180px;
+    height: 40px;
+    width:  350px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*MENU DO SITE Categorias, Ofertas do dia.....*/
+
+nav.primary-navigation {
+    position: relative;     /*Controle sobre a posição do menu*/
+    bottom: 66px;
+    right: 146px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-size: 13px;
+    width: 756px;          
+    height: 30px;
+   
+    
+              
+}
+
+nav.primary-navigation ul li {
+    list-style: none;
+	margin: 100 auto;
+	display: inline-block;
+	padding: 0 10px;           /*0 aumenta as barras do menu e o 30px aumenta o espaçamento entre as palvras do menu*/
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;   /*Fonte Do Google*/
+    border: 0px solid red;
+    height: 36px;              /*Controle do quadrado da borda para facilitar a navegação no submenu, quanto mais perto o quadrado tiver do submenu melhor para a navageção, diminuindo a chance do mesmo ficar desaparecendo quando move um pouco o mouse*/
+    
+}
+nav.primary-navigation li a {
+	color: rgb(126, 126, 126);           /*Cor das palavras*/
+    text-decoration:none
+}
+nav.primary-navigation li a:hover {
+	color: #000;        /*Cor de Hover*/
+}
+nav.primary-navigation li:hover {
+	cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	padding-left: 0px;       /*Aumenta o quadro depois que passa o mouse no menu*/
+	left: 0;
+	display: none;          /*Deixei no modo block para que o menu não suma quando passar o mouse em cima de Categorias*/
+	background: rgb(51,51,51);    /*Cor de fundo depois que passa o mouse em cima*/
+	z-index:99;     /*Este comando faz com que um item sobreponha o outro. No caso o submenu sobrepondo o resto do site*/
+}
+
+nav.primary-navigation ul li:hover > ul, nav.primary-navigation ul li ul:hover {
+    visibility: visible;
+	opacity: 1;							
+	display: block;
+	min-width: 205px;                    /*Tamanho do quadrado quando passa o mouse em cima da pra aumentar colocando inclusive o min-height*/
+    margin: 13px 0px 0px 4px;                    /*Movimenta como um todo o submenu*/
+	padding: 20px 0px 0px 25px;                   /*O quão longe fica o text dentro do submenu com relação ao menu principal*/  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;    
+	box-shadow: 0px 3px 5px -1px #ccc;         /*5px esfuma  -1px controla a borda da cor maior ou menor */
+}
+
+nav.primary-navigation ul li ul li {
+	clear: both;
+	width: 100%;
+    height: 35px;         /*Tamanho da borda quadrado para que ao passar o mouse em cima não desapareça acidentalmente o SUBMENU Tecnologia*/                
+	text-align: left;     /*Através do 	position: relative você consegue movimentar o texto dentro do quadrado quando passa o mouse em cima*/
+	margin-bottom: 6px;   /*Controle da distância entre as palavras do SUBMENU*/
+    border: 5x solid red; /*Controle para ver qual o tamanho da borda quadrado visivelmente em vermelho*/
+}
+
+nav.primary-navigation ul li ul li a{
+
+    color: rgb(255,255,255); /*Muda a cor das palavras no SUBMENU*/
+}
+nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;   /*Logo após passar o Mouse em cima da palavra, a mesma anima em direção à esquerda*/
+    color: rgb(255,255,255);          /*A cor da animação é rbanco*/
+	border-left: 2px solid #3ca0e7;       /*A cor da linha na vertical antes das palavras*/
+    transition: all 0.3s ease;        
+}
+a {
+	text-decoration: none;
+    
+}
+a:hover {
+	color: red;
+}
+
+ul li ul li a {
+	transition: all 0.5s ease;
+}
+
+
+
+
+
+
+/*SUBMENU DE TECNOLOGIA*/
+
+.varP{
+
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size:16px;
+    color: #000;
+}
+
+.lineHorizontal{
+    position: relative;
+    left: 10px;
+    top: 3px;
+    width: 600px;
+    border: 0.1px solid #000;
+    box-sizing: border-box;
+}
+
+/*Position Menu*/
+
+.positionmenu1{
+    position: relative;
+    top:40px;
+    left: 0px;
+    width: 230px;
+}
+
+.positionmenu2{
+    position: relative;
+    bottom: 63px;
+    left: 225px;
+    width: 200px;
+}
+
+.positionmenu3{
+    position: relative;
+    bottom: 165px;
+    left: 450px;
+    width: 180px;
+}
+
+.positionmenu4{
+    position: relative;
+    bottom: 90px;
+    left: 0px;
+    width: 190px;
+}
+
+.positionmenu5{
+    position: relative;
+    bottom: 264px;
+    left: 225px;
+    width: 208px;    
+}
+
+.positionmenu6{
+    position: relative;
+    bottom: 440px;
+    left: 450px;
+    width: 100px;
+}
+
+/*Fim das Posições*/
+
+
+nav.primary-navigation ul li ul li ul {
+    visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	left: 170px;
+    top: -79px;       /*Aumenta o quadro depois que passa o mouse no menu*/
+	display: block;
+	background: rgb(255,255,255);    /*Cor de fundo depois que passa o mouse em cima*/
+	z-index:99;     /*Este comando faz com que um item sobreponha o outro. No caso o submenu sobrepondo o resto do site*/
+    border: 0px solid red;
+}
+
+
+
+nav.primary-navigation ul li ul li:hover > ul, nav.primary-navigation ul li ul li ul:hover {
+	visibility: visible;								
+	display: block;
+    height: 727px;
+	padding: 0px 100px 0px 25px; /*O quão longe fica o text dentro do submenu com relação ao menu principal*/  
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;    
+	box-shadow: 0px 3px 5px -1px #ccc;         /*5px esfuma  -1px controla a borda da cor maior ou menor */
+}
+
+
+
+
+
+
+
+
+nav.primary-navigation ul li ul li ul li {
+	clear: both;
+	width: 100%;
+	text-align: left;                /*Através do 	position: relative você consegue movimentar o texto dentro do quadrado quando passa o mouse em cima*/
+	margin-bottom: 0px;
+	border-style: none;
+}
+
+
+
+
+
+nav.primary-navigation ul li ul li ul li a{
+
+    color: #000;/*Muda a cor das palavras na passada do mouse*/
+}
+nav.primary-navigation ul li ul li ul li a:hover {
+    padding-left: 10px;
+    color: #000;
+	border-left: 2px solid #3ca0e7;       /*É a cor da borda left dentro do submenu*/
+    transition: all 0.3s ease;
+}
+a {
+	text-decoration: none;
+    
+}
+a:hover {
+	color: red;
+}
+
+ul li ul li ul li a {
+	transition: all 0.5s ease;
+    
+}
+
+
+/***********************Slide BootStrap Configuracion******************/
+
+.slidebootstrap{
+
+    position: relative;
+    bottom: 63px;
+}
+
+.slidebootstrapheight{
+    height: 300px;          /*O tamanho em height da foto*/
+
+}
+
+/***********************Fim Slide BootStrap Configuracion******************/
+
+/***********************Pagamento Rápido e Seguro**************************/
+
+.divmoveall{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    width:190px;
+    height: 100px;
+}
+
+.divpagamento{
+
+    position: relative;
+    left: 100px;
+    border: 1px solid #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;;
+    background-color:#fff;
+    height: 96px;
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+
+/**Texto Pagamento Rápido**/
+
+.varpmove{
+    position: relative;  /*Move a DIV Com tudo dentro*/
+    left: 0px;
+    bottom:10px;
+}
+
+.varBoard{
+    position: relative;
+    left: 103px;
+    bottom: 95px;
+    border-left: 3px solid rgb(52,131,250);     
+    height: 94px;
+    box-sizing: border-box;
+    width: 0px;
+    
+}
+
+.varBoard2{
+    position: relative;
+    left: 333px;
+    bottom: 265px;
+    border-left: 1px solid rgb(204, 204, 204);
+    height: 98px;
+    box-sizing: border-box;
+    width: 0px;
+}
+
+.varP_pagamento {
+
+    position: relative;
+    left: 119px;
+    bottom: 155px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    width: 300px;
+}
+
+.varp_pagamento {
+    position: relative;
+    left: 120px;
+    bottom: 165px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(204, 204, 204);
+    width: 300px;
+}
+
+/***********************Fim Texto Pagamento**************************/
+
+/************************ATé 12 Vezes********************************/
+
+.varpmove1{
+    position: relative;  /*Move a DIV Com tudo dentro*/
+    left: 20px;
+    bottom: 10px;
+}   
+
+.varimgcreditcard{
+
+    position: relative;
+    left: 355px;
+    bottom: 329px;
+}
+
+.varp12vezes{
+
+    position: relative;
+    left: 410px;
+    bottom: 373px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    width: 300px;
+    
+}
+
+.varLinkVer{
+    position: relative;
+    left: 410px;
+    bottom: 392px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 11px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+}
+
+/********************Fim de Até 12 Vezes********************************/
+
+/********************Parcelado no Boleto********************************/
+
+.varpmove2{
+    position: relative;  /*Move a DIV Com tudo dentro*/
+    left: 110px;
+    bottom: 121px;
+}
+
+
+.varimgheadmoney{
+
+    position: relative;
+    left: 555px;
+    bottom: 329px;
+}
+
+.varpparcelado{
+
+    position: relative;
+    left: 610px;
+    bottom: 373px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    width: 300px;
+}
+
+.varLinkVer2{
+    position: relative;
+    left: 610px;
+    bottom: 392px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 11px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+}
+
+
+/********************Fim Do Parcelado no Boleto********************************/
+
+/***********************Via Pix************************************************/
+
+
+.varpmove3{
+    position: relative;  /*Move a DIV Com tudo dentro*/
+    left: 400px;
+    bottom: 231px;
+}
+
+
+.varimgsmartphone{
+
+    position: relative;
+    left: 555px;
+    bottom: 329px;
+}
+
+.varpviapix{
+
+    position: relative;
+    left: 610px;
+    bottom: 373px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    width: 300px;
+    
+    
+}
+
+.varLinkVer3{
+    position: relative;
+    left: 610px;
+    bottom: 392px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 11px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+    
+    
+}
+
+/***********************Fim Via Pix************************************************/
+
+/***********************View More**************************************************/
+
+.varpmove4{
+    position: relative;  /*Move a DIV Com tudo dentro*/
+    left: 1200px;
+    bottom: 675px;
+    width: 100px;
+}
+
+/***********************Fim View More**************************************************/
+
+/***********************Produtos Venda Mercado Livre*********************************/
+
+/*Baseada na sua última....*/
+
+.varmovebaseadaall{
+
+    margin-left: -40px;  
+}
+
+
+
+
+
+.varmovebaseada {
+
+    position: relative;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.varpbaseada{
+
+    position: relative;
+    left: 150px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 340px;
+    
+}
+
+.varLinkVer4{
+    position: relative;
+    left: 500px;
+    bottom: 14px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+    
+}
+
+/**Fim Baseada na sua última....*/
+
+/********icones de venda********/
+
+.varprodutodivall{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-start;
+     align-content: space-around;
+     width: 1200px;   
+     margin-left: 153px;
+     margin-top: 10px;
+}
+
+.varprodutodiv1{
+    height: 324px;
+    width: 229px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.varprodutodiv2{
+    height: 324px;
+    width: 229px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varprodutodiv3{
+    height: 324px;
+    width: 229px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varprodutodiv4{
+    height: 324px;
+    width: 229px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varprodutodiv5{
+    height: 324px;
+    width: 229px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varprodutodiv1less{
+
+    position: relative;
+    left: 0px;
+    bottom: 100px;
+    border: 1px solid rgb(204, 204, 204);
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+/********Fim icones de venda********/
+
+
+/*Relacionado com as visitas em informática*/
+
+.varmoverelacionadoall{
+
+    margin-left: -40px;
+}
+
+
+.varmoverelacionado {
+    position: absolute;
+    top: 900px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.varprelacionado{
+
+    position: relative;
+    left: 150px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 540px;
+    
+}
+
+.varlinkrelacionado{
+    position: relative;
+    left: 670px;
+    bottom: 14px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+    
+}
+
+
+/********Segundo Icones de venda********/
+
+.varprodutodivallrelacionado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 1200px;   
+    margin-left: 153px;
+    margin-top: 100px;
+}
+
+.varprodutodiv1relacionado{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+}
+
+
+
+.varprodutodiv2relacionado{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv3relacionado{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv4relacionado{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv5relacionado{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv1lessrelacionado{
+
+   position: relative;
+   left: 0px;
+   bottom: 90px;
+   border: 1px solid rgb(204, 204, 204);
+   width: 1200px;
+   box-sizing: border-box;
+}
+
+
+/************Ofertas Do Dia**********/
+
+.varmoveofertasall{
+    margin-left: -40px;
+}
+
+.varmoveofertas {
+    box-sizing: border-box;
+    width: 330px;
+}
+
+.varpoferta{
+    position: relative;
+    left: 153px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 540px;
+    
+}
+
+.varlinkoferta{
+    position: relative;
+    left: 340px;
+    bottom: 14px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+    
+}
+
+/********Terceiro Icones de venda********/
+
+
+.varprodutodivalloferta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 1200px;   
+    margin-left: 153px;
+    margin-top: 10px;
+}
+
+.varprodutodiv1oferta{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+}
+
+
+
+.varprodutodiv2oferta{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv3oferta{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv4oferta{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv5oferta{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv1lessoferta{
+
+   position: relative;
+   left: 0px;
+   bottom: 90px;
+   border: 1px solid rgb(204, 204, 204);
+   width: 1200px;
+   box-sizing: border-box;
+}
+
+/**********Fim Ofertas Do Dia**********/
+
+/********Fim Terceiro Icones de venda************/
+
+/********Benefícios Do Mercado Pontos************/
+
+.varmovebeneficiosmercadoall{
+
+    margin-left: 0px;
+    width: 0px;
+}
+
+.varmovebeneficiosmercado{
+    position: relative;
+    left: 110px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.varlinkbeneficiosmercado{
+    position: relative;
+    left: 375px;
+    bottom: 57px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+}
+
+
+
+
+
+.varbeneficiosflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1280px;
+    margin-left: 115px;
+}
+
+/********Disney*********/
+
+.vardisneyall{
+    margin-left: -20px;
+}
+
+.vardisney{
+    width: 382px;
+    height: 248px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vardisneylogo{
+
+    position: relative;
+    right: 365px;
+    top: 50px;
+    width: 79px;
+    height: 79px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.varpdisney4meses{
+    position: relative;
+    bottom: 110px;
+    left: 120px;
+    font-size: 20px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+
+.varpdisney{
+    position: relative;
+    bottom: 115px;
+    left: 120px;
+    font-size: 18px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    width: 70px;
+}
+
+
+
+/********HBOMAX*********/
+
+.varhbomaxall{
+    
+    margin-left: -100px;  
+}
+
+.varhbomax{
+    width: 382px;
+    height: 248px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.varhbomaxlogo{
+
+    position: relative;
+    right: 365px;
+    top: 50px;
+    width: 79px;
+    height: 79px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.varphbomax4meses{
+    position: relative;
+    bottom: 110px;
+    left: 120px;
+    font-size: 20px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+
+.varphbomax{
+    position: relative;
+    bottom: 115px;
+    left: 120px;
+    font-size: 18px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+
+
+
+
+/********Paramount*********/
+
+.varparamountall{
+   
+    margin-left: -100px;
+}
+
+.varparamount{
+    width: 382px;
+    height: 248px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.varparamountlogo{
+
+    position: relative;
+    right: 365px;
+    top: 50px;
+    width: 79px;
+    height: 79px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.varpparamount4meses{
+    position: relative;
+    bottom: 110px;
+    left: 120px;
+    font-size: 20px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    box-sizing: border-box;
+    width: 140px;
+}
+
+
+.varpparamount{
+    position: relative;
+    bottom: 115px;
+    left: 120px;
+    font-size: 18px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    width: 70px;
+    
+}
+
+/***********************Fim Benefícios Do Mercado Pontos************
+/******************************Confira****************************/
+
+/****************************Promoções a cada 1 hora***************/
+
+.varmoveconfiraall{
+
+    margin-top:300px;
+    margin-left: -50px;
+    width: 400px;
+}
+
+
+.varmoveconfira{
+    position: relative;
+    left: 160px;
+    bottom: 350px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.varconfira{
+    position: relative;
+    left: 160px;
+    bottom: 350px;
+    height:250px;
+    width: 555px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.varimgconfira{
+    position: relative;
+    left: 200px;
+    bottom: 550px;
+    width: 240px;
+}
+
+.varbuttonconfira{
+    position: relative;
+    left: 200px;
+    bottom: 615px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    background-color: #3483fa;
+    color: #fff;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    border: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varbuttonconfira:hover{
+    
+    background-color: rgb(18,89,195);
+}
+
+.varimgconfiraporcentagem{
+    position: relative;
+    left: 360px;
+    bottom: 666px;
+    height: 220px;
+    width: 250px;
+}
+
+/****************************FIM Promoções a cada 1 hora***************/
+
+.varmovefinancie2{
+    position: relative;
+    left: 540px;
+    bottom: 552px;
+    width: 360px;
+    height: 0px;
+}
+
+.varconfira2{
+    position: relative;
+    left: 160px;
+    bottom: 350px;
+    height:250px;
+    width: 555px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.varimgconfira2{
+    position: relative;
+    left: 200px;
+    bottom: 550px;
+    width: 240px;
+}
+
+.varbuttonconfira2{
+    position: relative;
+    left: 200px;
+    bottom: 615px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    background-color: #3483fa;
+    color: #fff;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    border: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varbuttonconfira2:hover{
+    
+    background-color: rgb(18,89,195);
+}
+
+.varimgconfiraporcentagem2{
+    position: relative;
+    left: 360px;
+    bottom: 666px;
+    height: 220px;
+    width: 250px;
+}
+
+
+/******************************Fim Confira****************************/
+
+
+
+
+
+/****************************Você também pode gostar******************/
+
+.varmovegostarall{
+
+    margin-left: -50px;
+    width: 0px;
+}
+
+.varmovegostar {
+    position: relative;
+    bottom: 650px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.varpgostar{
+    position: relative;
+    left: 153px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 540px;
+    
+}
+
+.varlinkgostar{
+    position: relative;
+    left: 485px;
+    bottom: 14px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;
+    
+}
+
+/********Terceiro Icones de venda********/
+
+
+.varprodutodivallgostara{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 1200px;   
+    margin-left: 163px;
+    margin-top: -630px;
+}
+
+.varprodutodiv1gostar{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+}
+
+
+
+.varprodutodiv2gostar{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv3gostar{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv4gostar{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv5gostar{
+   height: 324px;
+   width: 229px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv1lessgostar{
+
+   position: relative;
+   left: 0px;
+   bottom: 90px;
+   border: 1px solid rgb(204, 204, 204);
+   width: 1200px;
+   box-sizing: border-box;
+}
+
+/*********************Fim Você também pode gostar***********************/
+
+
+
+
+
+
+
+
+
+
+
+/****************************Você também pode gostar******************/
+
+
+.varmovelojasall{
+    margin-left: -50px;
+    margin-top: -220px;
+    width: 0px;
+}
+
+.varmovelojas {
+    position: relative;
+    bottom: 0px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.varplojas{
+    position: relative;
+    left: 153px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 540px;
+    
+}
+
+.varlinklojas{
+    position: relative;
+    left: 515px;
+    bottom: 14px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(52,131,250);
+    text-decoration: none;   
+}
+
+/********Terceiro Icones de venda********/
+
+
+.varprodutodivalllojas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    width: 1215px;   
+    margin-left: 162px;
+    margin-top: 15px;
+}
+
+/************Adidas, Ri Happy, Fast Help, Dell************************/
+
+.varprodutodiv1lojas{
+   height: 354px;
+   width: 288px;
+   background-color: #fff;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+}
+
+.varmoveadidasin{
+    margin-left: 100px;
+}
+
+
+.varimgadidasbanner{
+
+    height: 100px;
+    width: 288px;
+}
+
+.varimgadidaslogo{
+    margin-left: 105px;
+    margin-top: -40px;
+    height: 80px;
+    width:  78px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varpadidas{
+    margin-left: 105px;
+    margin-top: 20px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.varimgadidastenis1{
+    margin-left: 30px;
+    margin-top: 8px;
+    height: 60px;
+    width:  58px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.varimgadidastenis2{
+    margin-left: 20px;
+    margin-top: 8px;
+    height: 60px;
+    width:  58px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varimgadidastenis3{
+    margin-left: 20px;
+    margin-top: 8px;
+    height: 60px;
+    width:  58px;
+    border: 1px solid rgb(204, 204, 204);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varlinkadidaslojas{
+    position: relative;
+    top: 20px;
+    left: 112px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    border: 5px solid transparent;
+}
+
+.varlinkadidaslojas:hover{
+    color: rgb(52,131,250);
+}
+
+
+/*****************Fim Adidas, Ri Happy, Fast Help, Dell*********************/
+
+
+/*************************Você também pode gostar***************************/
+
+.varmoveinteressarall{
+
+    margin-left: -50px;
+    border: 5px solid red;
+    width: 0px;
+}
+
+
+.varmoveinteressar {
+    position: relative;
+    bottom: 0px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.varpinteressar{
+    position: relative;
+    left: 153px;
+    top: 30px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+
+
+
+.varprodutodiv2lojas{
+   height: 354px;
+   width: 288px;
+   background-color: #fff;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+}
+
+.varprodutodiv3lojas{
+   height: 354px;
+   width: 288px;
+   background-color: #fff;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+.varprodutodiv4lojas{
+   height: 354px;
+   width: 288px;
+   background-color: #fff;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   box-sizing: border-box;
+   
+}
+
+
+/*********************Fim Você também pode gostar***********************/
+
+/************************Voce pode se interessar***********************/
+
+
+
+
+.varprodutodivallinteressar{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+/*********************Até 50% off na HBO MAX**********************/
+
+.vardiv1interessar{
+    height: 248px;
+    width: 585px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+}
+
+.varimginteressar{
+    margin-top: 50px;
+    margin-left: 45px;
+    height: 90px;
+    width: 180px;
+}
+
+.varbuttoninteressar{
+    position: relative;
+    top: 110px;
+    right: 183px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    background-color: #3483fa;
+    color: #fff;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    border: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varbuttoninteressar:hover{
+    
+    background-color: rgb(18,89,195);
+}
+
+
+.varimginteressarporcentagem{
+    margin-left: 290px;
+    margin-top: -130px;
+    height: 220px;
+    width: 250px;
+}
+
+/*********************Fim De Até 50% off na HBO MAX**********************/
+
+
+
+
+/*********************Compre fora com frete gratis**********************/
+
+.vardiv2interessar{
+    height: 248px;
+    width: 585px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+}
+
+.varimgcomprefora{
+    margin-top: 50px;
+    margin-left: 25px;
+    height: 80px;
+    width: 250px;
+}
+
+.varbuttoncomprefora{
+    position: relative;
+    top: 115px;
+    right: 253px;
+    font-size: 12px;
+    height: 30px;
+    width: 90px;
+    background-color: #3483fa;
+    color: #fff;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    border: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.varbuttoncomprefora:hover{
+    
+    background-color: rgb(18,89,195);
+}
+
+
+.varimgcompreforaporcentagem{
+    margin-left: 310px;
+    margin-top: -110px;
+    height: 220px;
+    width: 250px;
+}
+
+
+/*********************Fim Compre fora com frete gratis**********************/
+
+/*********************Fim Voce pode se interessar***************************/
+
+
+
+/**************************Categorias Populares********************/
+
+
+.varmovecategorias{
+    position: relative;
+    bottom: 0px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.varpcategorias{
+    position: relative;
+    left: 153px;
+    top: 70px;
+    color: rgb(119, 119, 119);
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+    width: 270px;
+    
+}
+
+/*******************Flexbox Segundo Quadro***********************/
+
+.varprodutodivallpopulares{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1213px;
+    margin-top: 100px;
+    margin-left: 160px;
+}
+
+/************Carros Motos e Outros**********************/
+
+.varprodutodiv1populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 2px;
+   
+}
+
+.varimgpopulares{
+    margin-left: 60px;
+    margin-top: 30px
+
+}
+
+.varpopulares{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/************Fim Carros Motos e Outros**********************/
+
+/***************Batom Higiene Pessoal**********************/
+
+
+.varprodutodiv2populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+ 
+}
+
+
+
+.varimgpopulares2{
+    margin-left: 65px;
+    margin-top: 30px
+
+}
+
+.varpopulares2{
+    
+    margin-top: 5px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/************Fim Batom Higiene Pessoal**********************/
+
+
+/*******************Calçados e Roupas**********************/
+
+
+.varprodutodiv3populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+}
+
+.varimgpopulares3{
+    margin-left: 55px;
+    margin-top: 30px
+
+}
+
+.varpopulares3{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*******************Fim Calçados e Roupas**********************/
+
+/*******************Celulares e Telefones**********************/
+
+
+.varprodutodiv4populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varimgpopulares4{
+    margin-left: 65px;
+    margin-top: 30px
+
+}
+
+.varpopulares4{
+    
+    margin-top: 8px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/****************Fim Celulares e Telefones**********************/
+
+/****************Eletrônicos, Áudio e Video**********************/
+
+.varprodutodiv5populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+.varimgpopulares5{
+    margin-left: 60px;
+    margin-top: 30px
+
+}
+
+.varpopulares5{
+    
+    margin-top: 6px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/************Fim Eletrônicos, Áudio e Video**********************/
+
+/*************************Ferramentas****************************/
+
+.varprodutodiv6populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+}
+
+.varimgpopulares6{
+    margin-left: 60px;
+    margin-top: 27px
+
+}
+
+.varpopulares6{
+    
+    margin-top: 7px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*********************Fim Ferramentas****************************/
+
+
+/*********************Informáticas*******************************/
+
+.varprodutodiv7populares{
+    height: 171px;
+    width: 171px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+}
+
+.varimgpopulares7{
+    margin-left: 57px;
+    margin-top: 38px
+
+}
+
+.varpopulares7{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*****************Fim Informáticas*******************************/
+
+
+
+
+
+
+
+
+
+
+/************************Segundo Quadrado************************/
+/************************Segundo Quadrado************************/
+/************************Segundo Quadrado************************/
+
+
+/*******************Flexbox Segundo Quadro***********************/
+
+.varprodutodivallpopulares2{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1213px;
+    margin-top: 3px;
+    margin-left: 160px;
+}
+
+
+/************Carros Motos e Outros**********************/
+
+
+
+.varimgpopulares{
+    margin-left: 60px;
+    margin-top: 30px
+
+}
+
+.varpopulares{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/************Fim Carros Motos e Outros**********************/
+
+
+
+
+
+
+/***************Batom Higiene Pessoal**********************/
+
+
+.varimgpopulares2{
+    margin-left: 65px;
+    margin-top: 30px
+
+}
+
+.varpopulares2{
+    
+    margin-top: 5px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/************Fim Batom Higiene Pessoal**********************/
+
+
+/*******************Calçados e Roupas**********************/
+
+
+
+.varimgpopulares3{
+    margin-left: 55px;
+    margin-top: 30px
+
+}
+
+.varpopulares3{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/*******************Fim Calçados e Roupas**********************/
+
+/*******************Celulares e Telefones**********************/
+
+
+
+.varimgpopulares4{
+    margin-left: 65px;
+    margin-top: 30px
+
+}
+
+.varpopulares4{
+    
+    margin-top: 8px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/****************Fim Celulares e Telefones**********************/
+
+/****************Eletrônicos, Áudio e Video**********************/
+
+
+.varimgpopulares5{
+    margin-left: 60px;
+    margin-top: 30px
+
+}
+
+.varpopulares5{
+    
+    margin-top: 6px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/************Fim Eletrônicos, Áudio e Video**********************/
+
+/*************************Ferramentas****************************/
+
+
+
+.varimgpopulares6{
+    margin-left: 60px;
+    margin-top: 27px
+
+}
+
+.varpopulares6{
+    
+    margin-top: 7px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*********************Fim Ferramentas****************************/
+
+
+/*********************Informáticas*******************************/
+
+.varimgpopulares7{
+    margin-left: 57px;
+    margin-top: 38px
+
+}
+
+.varpopulares7{
+    
+    margin-top: 10px;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*****************Fim  Informáticas*******************************/
+
+
+
+
